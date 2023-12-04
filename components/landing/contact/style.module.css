@@ -1,0 +1,30 @@
+.contact{
+    padding-block:4rem;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-inline: auto;
+    gap:1.5rem;
+    width: min(100%,750px);
+}
+.contact__form__items{
+    padding: 1.1rem 1rem;
+}
+.contact__form__items:hover,.contact__form__items:focus{
+    outline: none;
+}
+.contact__form__items::placeholder{
+  font-family: var(--Montserrat);
+    font-size: .9rem;
+  text-transform: capitalize;
+}
+.contact__form__textArea{
+    height: 150px;
+}
+.contact__form__btn{
+    align-self: center;
+    width: min(100%,200px);
+}

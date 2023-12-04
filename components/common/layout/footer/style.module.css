@@ -1,0 +1,53 @@
+/*f7f8f9*/
+.footer{
+    background-color:#f7f8f9;
+    margin-top: 8rem;
+    padding: 5rem calc(100vw/12);
+}
+.footer__container{
+    justify-content: space-between;
+}
+.description__list{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.description__title{
+    color: var(--primary);
+    font-family: var(--Montserrat);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-block: 0 1rem;
+    text-transform: uppercase;
+}
+.description__item{
+    font-family: var(--Montserrat);
+    margin: 0;
+}
+.description__item__name{
+    color: var(--primary);
+    text-transform: uppercase;
+}
+.description__item__link{
+    color: var(--primary);
+    text-transform: capitalize;
+}
+@media(min-width:1500px){
+    .footer{
+        padding-inline:calc(100vw/6);
+    }
+}
+@media(max-width:911px){
+    .footer{
+        padding-inline: 2rem;
+    }
+}
+@media(max-width:770px){
+    .footer__container{
+        align-items: center;
+        flex-direction: column;
+    }
+    .description__title{
+        align-self: center;
+    }
+}
