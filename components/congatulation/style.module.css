@@ -1,0 +1,18 @@
+.congratulation{
+    margin-inline: auto;
+}
+.congratulation__title{
+    color: var(--secondary);
+    font-family: var(--Montserrat);
+    font-size: clamp(2rem,11vw,4.5rem);
+    margin: 5rem auto 0 auto;
+    width: fit-content;
+}
+.congratulation__text{
+    color: var(--primary);
+    font-family: var(--Montserrat);
+    font-size: 1.3rem;
+    margin: 3rem auto 1rem auto;
+    text-transform: capitalize;
+    width: fit-content;
+}

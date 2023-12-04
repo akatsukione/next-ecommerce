@@ -1,0 +1,17 @@
+.title{
+    color: var(--primary);
+    font-size:clamp(2.5rem,11vw,3.5rem);
+    padding: 0 0 1.3rem 0;
+    position: relative;
+    text-transform: capitalize;
+}
+.title::before{
+    background-color: var(--secondary);
+    bottom: 0;
+    content: "";
+    height: 5px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 75px;
+}

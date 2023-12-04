@@ -1,0 +1,51 @@
+.hero{
+ background-image: url("../../../public/assets/images/tertiary-hero.png"); 
+ background-size: cover;
+ background-position: top;  
+ background-repeat: no-repeat;
+ height:550px;
+ padding: 6rem 7rem ;
+}
+.introduction{
+    color: var(--primary);
+    line-height: 70px;
+    max-width: 554px;
+    text-transform: capitalize;
+    width:90%;
+}
+.introduction__title{
+    color: var(--fourth);
+    font-size: clamp(2.9rem,11vw,4.5rem);
+}
+.introduction__title--firstPart{
+    color: var(--secondary);
+}
+.introduction__text{
+ font-family: var(--Montserrat);
+ font-size: .9rem;
+ line-height: 26px;
+ margin: 1.5rem 0 2.1rem 0;
+ width: 90%;
+}
+
+@media(min-width:1500px){
+    .hero{
+        padding-inline:calc(100vw/6) ;
+    }
+}
+@media(max-width:754px){
+  .hero{
+      background-position: center;
+      padding: 5rem 2.5rem;
+  }
+}
+@media(max-width:592px){
+    .hero{
+        height: 600px;
+        padding: 5rem 1rem ;
+    }
+    
+    .introduction__text{
+        width: 100%;
+    }
+}

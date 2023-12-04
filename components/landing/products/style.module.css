@@ -1,0 +1,124 @@
+.products{
+    padding: 5rem 7rem;
+}
+.products__container{
+   flex-wrap: wrap;    
+    gap: 4%;
+    margin:4.5rem 0 0 0 ;
+}
+.product{
+    background-color: var(--third);
+    box-shadow: 5px 5px 5px -5px rgb(0 0 0 / 20%);
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    width: 30%;
+}
+.product__container{
+    overflow: hidden;
+
+}
+.product__image__container{
+    background-color:#f7f8f9;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    height: 200px;
+    padding-block:4rem 2rem;
+    justify-content: center;
+    transition: all .2s ease;
+
+}
+
+
+.product__container:hover .product__image__container,.product__container:focus .product__image__container{
+-webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.1,1.1);
+}
+
+.product__price__container{
+ overflow: hidden;
+ padding: 1.5rem 2rem 2rem 2rem;
+ justify-content: space-between;
+}
+.product__name,.product__price{
+    color: var(--primary);
+    font-family: var(--Montserrat);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.product__btn__container--no-opacity{
+    align-items: center;
+    justify-content: center;
+    display: flex;  
+    position:absolute;
+    flex-direction: column;
+    background: transparent;
+    bottom: 0%;
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    right: 0 ;
+     top: 100%;
+     opacity: 0;
+    transition: all .2s ease;
+}
+.product__btn__container--opacity{
+    background-color: var(--third);
+    bottom: 0%;
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0 ;
+    display: none;
+     top: 0;
+    opacity: .5;
+ transition: all .2s ease;
+}
+.product__btn{
+    display: block;
+    margin-bottom: 1rem;
+    width: 180px;
+
+}
+.product__container:hover  .product__btn__container--no-opacity ,.product__container:focus .product__btn__container--no-opacity{
+opacity: 1;
+top: 0%;
+}
+.product__container:hover  .product__btn__container--opacity ,.product__container:focus .product__btn__container--opacity{
+  display: block;
+}
+
+@media (min-width:1500px) {
+    .products{
+        padding: 5rem 10rem;
+    }
+}
+@media(max-width:800px){
+    .products{
+        padding: 5rem 2rem;
+    }
+}
+@media(max-width:650px){
+    .products__container{
+        justify-content: center;
+        row-gap: 2rem;
+    }
+    .product{
+    width: 40%;
+    }
+}
+
+@media(max-width:470px){
+    .products__container{
+       display: block;
+    }
+    .product{
+    margin: 0 0 2rem 0;
+    width: 100%;
+    }
+}
